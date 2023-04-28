@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "title": "Vykoupení z věznice Shawshank",
+        "url": "https://www.csfd.cz/film/2294-vykoupeni-z-veznice-shawshank",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/162/505/162505167_735db9.jpg",
+        "genres": [
+            "drama",
+            "krimi"
+        ],
+        "year": 1994
+    },
+    {
+        "id": 2,
+        "title": "Forrest Gump",
+        "url": "https://www.csfd.cz/film/10135-forrest-gump",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/158/988/158988468_acc7b5.jpg",
+        "genres": [
+            "drama",
+            "komedie",
+            "romantický"
+        ],
+        "year": 1994
+    },
+    {
+        "id": 3,
+        "title": "Zelená míle",
+        "url": "https://www.csfd.cz/film/2292-zelena-mile",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/164/445/164445478_1ed513.jpg",
+        "genres": [
+            "drama",
+            "krimi",
+            "mysteriózní"
+        ],
+        "year": 1999
+    },
+    {
+        "id": 4,
+        "title": "Přelet nad kukaččím hnízdem",
+        "url": "https://www.csfd.cz/film/2982-prelet-nad-kukaccim-hnizdem",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/000/002/2831_9fc5c9.jpg",
+        "genres": [
+            "drama"
+        ],
+        "year": 1975
+    },
+    {
+        "id": 5,
+        "title": "Sedm",
+        "url": "https://www.csfd.cz/film/2671-sedm",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/159/256/159256875_01354b.jpg",
+        "genres": [
+            "thriller",
+            "krimi",
+            "mysteriózní",
+            "psychologický",
+            "drama"
+        ],
+        "year": 1995
+    },
+    {
+        "id": 6,
+        "title": "Schindlerův seznam",
+        "url": "https://www.csfd.cz/film/8653-schindleruv-seznam",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/163/153/163153410_9a7943.png",
+        "genres": [
+            "drama",
+            "historický",
+            "životopisný"
+        ],
+        "year": 1993
+    },
+    {
+        "id": 7,
+        "title": "Kmotr",
+        "url": "https://www.csfd.cz/film/1644-kmotr",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/162/362/162362236_a2f3bc.jpg",
+        "genres": [
+            "drama",
+            "krimi"
+        ],
+        "year": 1972
+    },
+    {
+        "id": 8,
+        "title": "Dvanáct rozhněvaných mužů",
+        "url": "https://www.csfd.cz/film/6178-dvanact-rozhnevanych-muzu",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/160/422/160422509_e42e9b.jpg",
+        "genres": [
+            "drama",
+            "krimi"
+        ],
+        "year": 1957
+    },
+    {
+        "id": 9,
+        "title": "Nedotknutelní",
+        "url": "https://www.csfd.cz/film/306731-nedotknutelni",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/166/176/166176207_6044fb.jpg",
+        "genres": [
+            "komedie",
+            "drama",
+            "životopisný"
+        ],
+        "year": 2011
+    },
+    {
+        "id": 10,
+        "title": "Pelíšky",
+        "url": "https://www.csfd.cz/film/4570-pelisky",
+        "posterUrl": "https://image.pmgstatic.com/cache/resized/w360/files/images/film/posters/158/694/158694510_2714a6.jpg",
+        "genres": [
+            "komedie",
+            "drama"
+        ],
+        "year": 1999
+    }
+]
