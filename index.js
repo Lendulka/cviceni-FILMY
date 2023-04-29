@@ -1,19 +1,8 @@
 console.log('funguju!');
 
-document.querySelector('.filters').addEventListener('submit', (event) => {
-    event.preventDefault()
-    let selectElmValue = document.querySelector('#select-genre').value
-    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies?genre=' + `${selectElmValue}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            createMovieDetail(data)
-        })
-})
-
 const createMovieDetail = (movies) => {
-    let movieList = document.querySelector('.movie-list')
-    movieList.innerHTML = movies
+    let movieListElm = document.querySelector('.movie-list')
+    movieListElm.innerHTML = movies
         .map((movie) => `
             <li class="movie-detail">
             <div class="movie-poster">
@@ -29,8 +18,8 @@ const createMovieDetail = (movies) => {
                     <a href=${movie.url} target="_blank">Odkaz na CSFD</a>
                 </div>
             </div>
-        </li>
-        `
+            </li>
+            `
         )
         .join('')
 }
@@ -45,10 +34,7 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies')
 const createListGenres = (listGenre) => {
     let selectGenreElm = document.querySelector('#select-genre')
     selectGenreElm.innerHTML = listGenre
-        .map(genre => `
-            <option value=${genre}>${genre}</option>
-            `
-        )
+        .map(genre => `<option value=${genre}>${genre}</option>`)
         .join('')
 }
 
@@ -58,3 +44,14 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/genres')
         console.log(data)
         createListGenres(data)
     })
+
+document.querySelector('.filters').addEventListener('submit', (event) => {
+    event.preventDefault()
+    let selectElmValue = document.querySelector('#select-genre').value
+    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies?genre=' + `${selectElmValue}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            createMovieDetail(data)
+        })
+})
