@@ -34,7 +34,10 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies')
 const createListGenres = (listGenre) => {
     let selectGenreElm = document.querySelector('#select-genre')
     selectGenreElm.innerHTML = listGenre
-        .map(genre => `<option value=${genre}>${genre}</option>`)
+        .map(genre =>
+            `<option value=${String(genre[0]).toUpperCase()}${String(genre).substring(1)}>
+            ${String(genre[0]).toUpperCase()}${String(genre).substring(1)}</option>`
+        )
         .join('')
 }
 
@@ -48,10 +51,12 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/genres')
 document.querySelector('.filters').addEventListener('submit', (event) => {
     event.preventDefault()
     let selectElmValue = document.querySelector('#select-genre').value
-    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies?genre=' + `${selectElmValue}`)
+    fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies?genre=' + `${selectElmValue} `)
         .then(response => response.json())
         .then(data => {
             console.log(data)
             createMovieDetail(data)
         })
 })
+
+
